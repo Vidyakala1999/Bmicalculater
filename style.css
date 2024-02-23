@@ -1,0 +1,99 @@
+html{
+    background-image: url(https://static.thip.media/wp-content/uploads/2020/04/15124536/weight-management-questions.jpg);
+
+    height: 100%;
+    width: 100%;
+    margin-right: 3%;
+}
+
+.container{
+    
+    height: 300px;
+    width: 550px;
+    background-color: rgb(89, 130, 132);
+    margin: 0 auto;
+    border: 5px solid rgb(29, 43, 43);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-template-rows: 100px 1fr 1fr;
+    box-shadow: 3px 2px 4px ;
+}
+#weight-input{
+    height: 28px;
+    width: 250px;
+    border-radius: 8px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 1 ;
+    align-self: center;
+}
+#wlabel{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1 ;
+}
+#height-input{
+    height: 28px;
+    width: 250px;
+border-radius: 8px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2 ;
+    align-self: center;
+}
+#hlabel{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2 ;
+}
+#bmi-output{
+    height: 28px;
+    width: 250px;
+    border-radius: 8px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3 ;
+    align-self: center;
+
+}
+#bmilabel{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3 ;
+}
+#btn{
+    height: 28px;
+    width: 75px;
+    border-radius: 8px;
+    background-color: rgb(23, 61, 66);
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2 ;
+    align-self: center;
+    justify-self: center;
+    color: white;
+}
+#hlt-output{
+    height: 28px;
+    width: 250px;
+    border-radius: 8px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    align-self: center;
+}
+#hltlabel{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}

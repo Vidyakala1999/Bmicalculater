@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculater</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./BMI.js">
+</head>
+
+<body>
+    <h1 style="color: white; text-align: center;font-size: xx-large; font-family: serif;">BMI CALCULATER</h1>
+    <h2 style="color: white; text-align: center; font-family: serif;">[Body Mass Index]</h2>
+    <div class="container" style="margin-top: 12%; margin-left: 61%;">
+        <label for="weight-input" id="wlabel">Your Weight(in kg):</label>
+        <input type="number " id="weight-input">
+        <label for="height-input" id="hlabel">Your Height(in cm):</label>
+        <input type="number " id="height-input">
+        <button id="btn">Calculate</button>
+        <label for="bmi-output" id="bmilabel">Your BMI is:</label>
+        <input type="number" id="bmi-output">
+        <label for="hlt-output" id="hltlabel">Your Are:</label>
+        <input type="text" id="hlt-output">
+        
+
+    </div>
+</body>
+<script>
+    let btn = document.getElementById('btn');
+
+    btn.addEventListener('click', function () {
+        let weight = document.getElementById('weight-input').value;
+        let height = document.getElementById('height-input').value;
+        let bmi = (weight / (height * height) * 10000);
+        document.getElementById('bmi-output').value = bmi;
+        if (bmi > 25) {
+            document.getElementById('hlt-output').value = "Over-Weight";
+        } else if (bmi < 18) {
+            document.getElementById('hlt-output').value = "Under-Weight";
+        } else {
+            document.getElementById('hlt-output').value = "Normal";
+        }
+    })
+</script>
+
+</html>
